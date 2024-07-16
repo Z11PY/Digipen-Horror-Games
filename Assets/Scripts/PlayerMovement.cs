@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 3;
     public float rotationSpeed;
+    public float sprintSpeed = 5;
+    public float stamina = 100;
+    public float staminaDrain;
     private float horizontalInput;
     private float forwardInput;
     [SerializeField] private Rigidbody2D playerRb;
@@ -14,7 +17,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        speed = 3;
+        sprintSpeed = 5;
     }
 
     // Update is called once per frame
@@ -25,5 +29,16 @@ public class PlayerMovement : MonoBehaviour
         playerRb.velocity = new Vector2(horizontalInput * speed, forwardInput * speed);
 
         transform.up = playerRb.velocity.normalized * rotationSpeed * Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && stamina >= 0)
+        {
+            stamina -= staminaDrain;
+            speed = sprintSpeed;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift) && stamina <= 100)
+        {
+            speed = 3;
+            stamina += 10;
+        }
     }
 }
