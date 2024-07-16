@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class PipeRotate : MonoBehaviour
 {
-    void Update()
+    void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))
         {
