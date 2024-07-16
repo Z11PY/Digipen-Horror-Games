@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed = 5;
     public float stamina = 100;
     public float staminaDrain;
+    public bool isSprinting;
     private float horizontalInput;
     private float forwardInput;
     [SerializeField] private Rigidbody2D playerRb;
@@ -32,12 +33,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && stamina >= 0)
         {
-            stamina -= staminaDrain;
             speed = sprintSpeed;
+            isSprinting = true;
         }
         if (Input.GetKeyUp(KeyCode.LeftShift) && stamina <= 100)
         {
             speed = 3;
+            isSprinting = false;
+        }
+
+        if(isSprinting == true)
+        {
+            stamina -= staminaDrain;
+        }
+
+        if (isSprinting == false)
+        {
             stamina += 10;
         }
     }
