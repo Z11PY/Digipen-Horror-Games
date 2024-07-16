@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2ndFloor.unity
     guid: bf0906b5060c52344ad9f50df4aef16b
+  - enabled: 1
+    path: Assets/Scenes/Tips.unity
+    guid: bc3d8b9cf3991834ca5470905c1295cd
   m_configObjects: {}
