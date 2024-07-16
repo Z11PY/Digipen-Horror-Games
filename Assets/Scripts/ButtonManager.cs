@@ -28,6 +28,10 @@ public class ButtonManager : MonoBehaviour
     /// </summary>
     public void GoToMainMenu()
     {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void GoToTips()
+    {
         SceneManager.LoadScene("Tips");
     }
 }
