@@ -16,9 +16,18 @@ public class ButtonManager : MonoBehaviour
     {
         
     }
-
+    /// <summary>
+    /// changes scene to 2ndfloor 
+    /// </summary>
     public void StartGame()
     {
         SceneManager.LoadScene("2ndFloor");
+    }
+    /// <summary>
+    /// goes to the main menu
+    /// </summary>
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene("Tips");
     }
 }
