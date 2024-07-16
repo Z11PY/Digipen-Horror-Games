@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Interact : MonoBehaviour
 {
@@ -24,6 +25,14 @@ public class Interact : MonoBehaviour
         if (collision.gameObject.tag == "Puzzle")
         {
             interactPrompt.enabled = true;
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Puzzle" && Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene("Pipe puzzle");
         }
     }
 
