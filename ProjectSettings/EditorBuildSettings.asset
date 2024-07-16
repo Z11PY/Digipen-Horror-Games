@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tips.unity
     guid: bc3d8b9cf3991834ca5470905c1295cd
+  - enabled: 1
+    path: Assets/Scenes/Pipe puzzle.unity
+    guid: ebf7adfb4889ace4d870374de61cebbc
   m_configObjects: {}
