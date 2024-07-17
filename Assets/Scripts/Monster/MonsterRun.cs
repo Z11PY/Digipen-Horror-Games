@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterRun : MonoBehaviour
 {
-    public float baseWalk = 0.1f;
+    public float baseWalk = 0.1f; //base walk when not seing the player 
     public float initialSpeed = 1f; // Initial speed when the monster starts chasing
     public float chaseSpeed = 3.5f; // Speed at which the monster chases the player after 1 second
     private Transform player; // Reference to the player's transform
