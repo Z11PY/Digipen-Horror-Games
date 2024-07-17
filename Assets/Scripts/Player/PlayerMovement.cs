@@ -52,4 +52,5 @@ public class PlayerMovement : MonoBehaviour
             stamina += 10;
         }
     }
+    
 }
