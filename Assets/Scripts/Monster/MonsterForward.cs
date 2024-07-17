@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterForward : MonoBehaviour
 {
-    //random
+  
     public float baseWalk = 0.1f; //base walk when not seeing the player 
     public float initialSpeed = 1f; // Initial speed when the monster starts chasing
     public float chaseSpeed = 3.5f; // Speed at which the monster chases the player after 1 second
