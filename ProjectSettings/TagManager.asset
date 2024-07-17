@@ -9,6 +9,7 @@ TagManager:
   - Door
   - Monster
   - Vision
+  - box
   layers:
   - Default
   - TransparentFX
