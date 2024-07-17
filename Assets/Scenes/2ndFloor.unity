@@ -420,8 +420,8 @@ PolygonCollider2D:
       - {x: 0, y: 0.5773587}
       - {x: -2.9914417, y: -2.8056579}
       - {x: -3.0090005, y: -8.501595}
-      - {x: -3.033175, y: -9.109059}
-      - {x: 2.7790759, y: -9.197556}
+      - {x: -3.1107621, y: -53.21743}
+      - {x: 2.7014875, y: -53.189545}
   m_UseDelaunayMesh: 0
 --- !u!114 &116763748
 MonoBehaviour:
@@ -435,7 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704eb7954397a634eb1867674a1fa69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 1
+  initialSpeed: 1
+  chaseSpeed: 3.5
 --- !u!1 &213140162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3523780191385412522, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
@@ -470,6 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704eb7954397a634eb1867674a1fa69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialSpeed: 1
   chaseSpeed: 5
 --- !u!1 &232622859
 GameObject:
@@ -5095,7 +5097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4901030521538758355, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6270640397039008764, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
       propertyPath: m_LocalScale.x
