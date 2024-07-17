@@ -418,8 +418,8 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0, y: 3.6386564}
       - {x: -2.9879131, y: 3.6767755}
-      - {x: -3.107773, y: -13.773979}
-      - {x: 2.9615724, y: -13.851041}
+      - {x: -3.107773, y: -17.833216}
+      - {x: 2.9615724, y: -17.684763}
       - {x: 2.9480772, y: 0.045647383}
       - {x: 2.9184752, y: 3.7114952}
   m_UseDelaunayMesh: 0
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704eb7954397a634eb1867674a1fa69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseWalk: 0.1
+  baseWalk: 0
   initialSpeed: 1
   chaseSpeed: 3.7
 --- !u!1 &213140162 stripped
@@ -468,7 +468,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213140162}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
