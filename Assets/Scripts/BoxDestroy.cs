@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class BoxDestroy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Check if the triggered object has the tag "Box"
+        if (other.gameObject.CompareTag("Monster"))
+        {
+            // Destroy the box object
+            Destroy(gameObject);
+        }
     }
 }
+
