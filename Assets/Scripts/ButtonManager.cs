@@ -21,7 +21,7 @@ public class ButtonManager : MonoBehaviour
     /// </summary>
     public void StartGame()
     {
-        SceneManager.LoadScene("2ndFloor2");
+        SceneManager.LoadScene("2ndFloor");
     }
     /// <summary>
     /// goes to the main menu
@@ -36,7 +36,7 @@ public class ButtonManager : MonoBehaviour
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene("2ndFloor2");
+        SceneManager.LoadScene("2ndFloor");
     }
     public void Credits()
     {
