@@ -437,7 +437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseWalk: 0.1
   initialSpeed: 1
-  chaseSpeed: 3.5
+  chaseSpeed: 4
 --- !u!1 &213140162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3523780191385412522, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
