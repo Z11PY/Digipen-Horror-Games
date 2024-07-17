@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Interact : MonoBehaviour
 {
     public TextMeshProUGUI interactPrompt;
+    GameObject door;
     
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,10 @@ public class Interact : MonoBehaviour
         {
             interactPrompt.enabled = true;
         }
+        if (collision.gameObject.tag == "Door")
+        {
+            interactPrompt.enabled = true;
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -33,6 +38,10 @@ public class Interact : MonoBehaviour
         if (collision.gameObject.tag == "Puzzle" && Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene("Pipe puzzle");
+        }
+        if (collision.gameObject.tag == "Door" && Input.GetKeyDown(KeyCode.E))
+        {
+            //collision.gameObject.transform.rotation = Quaternion.Slerp(transform.rotation, 0, 0);
         }
     }
 
