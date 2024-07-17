@@ -12,9 +12,10 @@ public class TowelControl : MonoBehaviour
     {
         //if (Event.isMouse == EventType.MouseDrag)
         {
+            Debug.Log("Mouse Dragged");
             return;
         }
-        Debug.Log("Mouse Dragged");
+       
     }
 
     void Update()
