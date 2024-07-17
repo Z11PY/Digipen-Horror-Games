@@ -34,4 +34,8 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tips");
     }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("2ndFloor");
+    }
 }
