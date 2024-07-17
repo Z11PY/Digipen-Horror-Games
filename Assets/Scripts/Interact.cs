@@ -30,6 +30,7 @@ public class Interact : MonoBehaviour
         if (collision.gameObject.tag == "Puzzle")
         {
             interactPrompt.enabled = true;
+            isTouching = true;
         }
     }
 

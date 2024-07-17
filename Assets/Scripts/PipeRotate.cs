@@ -12,41 +12,42 @@ public class PipeRotate : MonoBehaviour
     public bool pipeRotated;
     public GameObject LockedDoor;
 
-    void OnMouseDown()
-    {
-        if (Input.GetMouseButtonDown(0) && pipeRotated == false)
+        void OnMouseDown()
         {
-            StartCoroutine(OneTurn());
+            if (Input.GetMouseButtonDown(0) && pipeRotated == false)
+            {
+                StartCoroutine(OneTurn());
+            }
+            if (Input.GetMouseButtonDown(0) && pipeRotated == true)
+            {
+                StartCoroutine(TwoTurn());
+            }
         }
-        if (Input.GetMouseButtonDown(0) && pipeRotated == true)
+
+        void Update()
         {
-            StartCoroutine (TwoTurn());
+            if (solved == 1)
+            {
+                SceneManager.LoadScene("2ndFloor");
+                LockedDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            }
         }
-    }
 
-    void Update()
-    {
-        if(solved == 1)
+        IEnumerator OneTurn()
         {
-            SceneManager.LoadScene("2ndFloor");
-            LockedDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            yield return null;
+            transform.Rotate(0, 0, 90);
+            Debug.Log("Rotate");
+            pipeRotated = true;
+            solved += 1;
         }
-    }
 
-    IEnumerator OneTurn()
-    {
-        yield return null;
-        transform.Rotate(0, 0, 90);
-        Debug.Log("Rotate");
-        pipeRotated = true;
-        solved += 1;
-    }
+        IEnumerator TwoTurn()
+        {
+            yield return null;
+            transform.Rotate(0, 0, 90);
+            pipeRotated = false;
+            solved -= 1;
+        }
 
-    IEnumerator TwoTurn()
-    {
-        yield return null;
-        transform.Rotate(0, 0, 90);
-        pipeRotated = false;
-        solved -= 1;
-    }
 }
