@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/2ndFloor.unity
     guid: bf0906b5060c52344ad9f50df4aef16b
   - enabled: 1
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 35268be61ea3786469517c3030e8e966
+  - enabled: 1
+    path: Assets/Scenes/Towel puzzle.unity
+    guid: b78ac708145fe524a8e18098f5466096
+  - enabled: 1
+    path: Assets/Scenes/2ndFloor2.unity
+    guid: 4e2bee6db1f3907459d50cfd96b67cd1
   m_configObjects: {}
