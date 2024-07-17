@@ -10,26 +10,17 @@ public class PipeRotate : MonoBehaviour
 {
     public float solved;
     public bool pipeRotated;
+    public GameObject puzzle;
+    public GameObject pipe;
     public GameObject LockedDoor;
-
-        void OnMouseDown()
-        {
-            if (Input.GetMouseButtonDown(0) && pipeRotated == false)
-            {
-                StartCoroutine(OneTurn());
-            }
-            if (Input.GetMouseButtonDown(0) && pipeRotated == true)
-            {
-                StartCoroutine(TwoTurn());
-            }
-        }
 
         void Update()
         {
             if (solved == 1)
             {
-                SceneManager.LoadScene("2ndFloor");
-                LockedDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                LockedDoor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            LockedDoor.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            puzzle.SetActive(false);
             }
         }
 
@@ -49,5 +40,13 @@ public class PipeRotate : MonoBehaviour
             pipeRotated = false;
             solved -= 1;
         }
+
+    public void RotatePipe()
+    {
+        pipe.transform.Rotate(0, 0, 90);
+        Debug.Log("Rotate");
+        pipeRotated = true;
+        solved += 1;
+    }
 
 }
