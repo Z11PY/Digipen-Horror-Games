@@ -7,10 +7,12 @@ public class PlayerVision : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Wall"){
+        if (other.gameObject.tag == "Wall")
+        {
             // Make the collider visible
             SetColliderVisibility(other, true);
-        }else if(other.gameObject.tag == "Door")
+        }
+        else if(other.gameObject.tag == "Door")
         {
             SetColliderVisibility(other, true);
         }
