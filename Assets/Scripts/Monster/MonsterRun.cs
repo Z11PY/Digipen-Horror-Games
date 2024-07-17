@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MonsterRun : MonoBehaviour
 {
+    public float baseWalk = 0.1f;
     public float initialSpeed = 1f; // Initial speed when the monster starts chasing
     public float chaseSpeed = 3.5f; // Speed at which the monster chases the player after 1 second
     private Transform player; // Reference to the player's transform
-    private bool isChasing = false; // Flag to check if the monster is chasing the player
-    private bool isSpeedIncreased = false; // Flag to check if the speed has been increased
+    private bool isChasing = false; // check if the monster is chasing the player
+    private bool isSpeedIncreased = false; // check if the speed has been increased
 
     void Update()
     {
@@ -18,6 +19,9 @@ public class MonsterRun : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             float currentSpeed = isSpeedIncreased ? chaseSpeed : initialSpeed;
             transform.position = Vector2.MoveTowards(transform.position, player.position, currentSpeed * Time.deltaTime);
+        }else
+        {
+            transform.Translate(Vector2.down * baseWalk * Time.deltaTime);
         }
     }
 

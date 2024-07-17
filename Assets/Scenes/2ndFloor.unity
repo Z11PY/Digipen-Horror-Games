@@ -416,9 +416,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.729864, y: -2.7106547}
-      - {x: 0, y: 0.5773587}
-      - {x: -2.9914417, y: -2.8056579}
+    - - {x: 2.932858, y: 3.6835976}
+      - {x: -0.050749466, y: 3.8506074}
+      - {x: -2.9914417, y: 3.740839}
       - {x: -3.0090005, y: -8.501595}
       - {x: -3.1107621, y: -53.21743}
       - {x: 2.7014875, y: -53.189545}
@@ -435,6 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704eb7954397a634eb1867674a1fa69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseWalk: 0.1
   initialSpeed: 1
   chaseSpeed: 3.5
 --- !u!1 &213140162 stripped
@@ -459,20 +460,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6270640397039008764, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
   m_PrefabInstance: {fileID: 8738128687409480488}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &213140174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213140162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 704eb7954397a634eb1867674a1fa69f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialSpeed: 1
-  chaseSpeed: 5
 --- !u!1 &232622859
 GameObject:
   m_ObjectHideFlags: 0
@@ -5154,9 +5141,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3523780191385412522, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
       insertIndex: -1
       addedObject: {fileID: 213140170}
-    - targetCorrespondingSourceObject: {fileID: 3523780191385412522, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 213140174}
   m_SourcePrefab: {fileID: 100100000, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
