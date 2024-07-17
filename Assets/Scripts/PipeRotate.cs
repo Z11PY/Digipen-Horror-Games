@@ -9,29 +9,44 @@ using UnityEngine;
 public class PipeRotate : MonoBehaviour
 {
     public float solved;
-    public Quaternion pipeRotation;
-    public GameObject pipe;
+    public bool pipeRotated;
+    public GameObject LockedDoor;
 
     void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && pipeRotated == false)
         {
-            transform.Rotate(0, 0, 90);
-            Debug.Log("Clicked");
-            pipeRotation = pipe.transform.rotation;
+            StartCoroutine(OneTurn());
+        }
+        if (Input.GetMouseButtonDown(0) && pipeRotated == true)
+        {
+            StartCoroutine (TwoTurn());
         }
     }
 
-    private void FixedUpdate()
+    void Update()
     {
-        //if(pipeRotation = )
+        if(solved == 1)
         {
-
+            SceneManager.LoadScene("2ndFloor");
+            LockedDoor.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
     }
 
-    void PuzzleComplete()
+    IEnumerator OneTurn()
     {
+        yield return null;
+        transform.Rotate(0, 0, 90);
+        Debug.Log("Rotate");
+        pipeRotated = true;
+        solved += 1;
+    }
 
+    IEnumerator TwoTurn()
+    {
+        yield return null;
+        transform.Rotate(0, 0, 90);
+        pipeRotated = false;
+        solved -= 1;
     }
 }
