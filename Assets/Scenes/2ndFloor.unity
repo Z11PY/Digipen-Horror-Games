@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 704eb7954397a634eb1867674a1fa69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3.5
+  speed: 1
 --- !u!1 &232622859
 GameObject:
   m_ObjectHideFlags: 0
@@ -4536,6 +4536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6877377102943263873, guid: 411807956d43bff48b9548d02b45c696, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4565,11 +4569,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2019719448007115460, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3523780191385412522, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
       propertyPath: m_Name
       value: MonsterArms
+      objectReference: {fileID: 0}
+    - target: {fileID: 3523780191385412522, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
+      propertyPath: m_TagString
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901030521538758355, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6270640397039008764, guid: d5cd42555421cd54b8b081fab99a8814, type: 3}
       propertyPath: m_LocalPosition.x

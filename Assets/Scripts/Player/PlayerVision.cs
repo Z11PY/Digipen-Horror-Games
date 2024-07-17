@@ -7,12 +7,12 @@ public class PlayerVision : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Wall")
+        if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Door")
         {
             // Make the collider visible
             SetColliderVisibility(other, true);
         }
-        else if(other.gameObject.tag == "Door")
+        else
         {
             SetColliderVisibility(other, true);
         }
@@ -21,12 +21,12 @@ public class PlayerVision : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Wall")
+        if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Door")
         {
             // Make the collider invisible
-            SetColliderVisibility(other, false);
+            SetColliderVisibility(other, true);
         }
-        else if (other.gameObject.tag != "Door")
+        else
         {
             SetColliderVisibility(other, false);
         }
