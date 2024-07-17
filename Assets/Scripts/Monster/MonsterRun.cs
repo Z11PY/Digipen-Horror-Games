@@ -34,7 +34,7 @@ public class MonsterRun : MonoBehaviour
             player = other.transform;
             isChasing = true;
             isSpeedIncreased = false; // Reset the speed increase flag
-            StartCoroutine(IncreaseSpeedAfterDelay(1f)); // Start the coroutine to increase speed after 1 second
+            StartCoroutine(IncreaseSpeedAfterDelay(1f)); // Start the delay to increase speed after 1 second
         }
     }
 
@@ -46,7 +46,7 @@ public class MonsterRun : MonoBehaviour
             // Stop chasing the player
             isChasing = false;
             player = null;
-            StopAllCoroutines(); // Stop all coroutines to prevent speed increase if the player leaves the trigger
+            StopAllCoroutines(); // Stop all delays to prevent speed increase if the player leaves the trigger
         }
     }
 

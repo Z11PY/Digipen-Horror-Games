@@ -38,4 +38,8 @@ public class ButtonManager : MonoBehaviour
     {
         SceneManager.LoadScene("2ndFloor");
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
