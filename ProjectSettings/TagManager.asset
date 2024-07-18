@@ -12,6 +12,8 @@ TagManager:
   - box
   - Zapper
   - Stair
+  - Folded
+  - UnFolded
   layers:
   - Default
   - TransparentFX

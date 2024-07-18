@@ -290,8 +290,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 677103401}
-  - {fileID: 1230861423}
-  - {fileID: 1408451968}
   m_Father: {fileID: 512055579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &642512109
@@ -308,7 +306,7 @@ GameObject:
   - component: {fileID: 642512110}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UnFolded
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,301 +428,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 61770347}
-  - {fileID: 1658542826}
-  - {fileID: 1320988038}
   m_Father: {fileID: 512055579}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1230861422
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 628445058}
-    m_Modifications:
-    - target: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_Name
-      value: FoldedTowel (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.051930986
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1230861425}
-  m_SourcePrefab: {fileID: 100100000, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
---- !u!4 &1230861423 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-  m_PrefabInstance: {fileID: 1230861422}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1230861424 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-  m_PrefabInstance: {fileID: 1230861422}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1230861425
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230861424}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!1001 &1320988037
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 936857229}
-    m_Modifications:
-    - target: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_Name
-      value: Towel (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.92
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.051930986
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1320988040}
-  m_SourcePrefab: {fileID: 100100000, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
---- !u!4 &1320988038 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-  m_PrefabInstance: {fileID: 1320988037}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1320988039 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-  m_PrefabInstance: {fileID: 1320988037}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1320988040
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1320988039}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!1001 &1408451967
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 628445058}
-    m_Modifications:
-    - target: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_Name
-      value: FoldedTowel (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.051930986
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1408451970}
-  m_SourcePrefab: {fileID: 100100000, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
---- !u!4 &1408451968 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-  m_PrefabInstance: {fileID: 1408451967}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1408451969 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
-  m_PrefabInstance: {fileID: 1408451967}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1408451970
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408451969}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1562780062
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,103 +522,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1658542825
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 936857229}
-    m_Modifications:
-    - target: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_Name
-      value: Towel (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.051930986
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1658542828}
-  m_SourcePrefab: {fileID: 100100000, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
---- !u!4 &1658542826 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-  m_PrefabInstance: {fileID: 1658542825}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1658542827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
-  m_PrefabInstance: {fileID: 1658542825}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1658542828
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658542827}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1001 &1724882800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -940,11 +548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4929203479171010756, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.54
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4929203479171010756, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.38
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4929203479171010756, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1045,11 +653,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4929203479171010756, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.36
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4929203479171010756, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.35
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4929203479171010756, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1087,6 +695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowelBin
       objectReference: {fileID: 0}
+    - target: {fileID: 5559523153188245951, guid: cd5fca75f8a277a48ac33aeb0ca0ee1f, type: 3}
+      propertyPath: m_TagString
+      value: Folded
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1103,6 +715,10 @@ PrefabInstance:
     - target: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
       propertyPath: m_Name
       value: Towel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2074601189122829298, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
+      propertyPath: m_TagString
+      value: UnFolded
       objectReference: {fileID: 0}
     - target: {fileID: 5848327229536547740, guid: 9fa2d45175cfb5541bfc5c4ec0eee3aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1163,6 +779,10 @@ PrefabInstance:
     - target: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
       propertyPath: m_Name
       value: FoldedTowel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6366890954808598118, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
+      propertyPath: m_TagString
+      value: Folded
       objectReference: {fileID: 0}
     - target: {fileID: 7238201460092401083, guid: 004dd3dac066aef419ca3c8750c4417b, type: 3}
       propertyPath: m_LocalPosition.x
