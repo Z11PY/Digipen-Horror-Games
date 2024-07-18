@@ -66,24 +66,14 @@ public class GameCamera : MonoBehaviour
         float projx2 = x1 + (x1 - x) * projected_length;
         float projy2 = y2 + (y2 - y) * projected_length;
 
-        GL.Begin(GL.TRIANGLES);
+        GL.Begin(GL.QUADS);
         GL.Color(Color.black);
 
-        GL.Vertex(new Vector3(x1, y1, 0));
-        GL.Vertex(new Vector3(x2, y1, 0));
-        GL.Vertex(new Vector3(projx1, projy1, 0));
-
-        GL.Vertex(new Vector3(x1, y1, 0));
-        GL.Vertex(new Vector3(projx2, projy1, 0));
-        GL.Vertex(new Vector3(projx1, projy1, 0));
-
-        GL.Vertex(new Vector3(x1, y1, 0));
-        GL.Vertex(new Vector3(x1, y2, 0));
-        GL.Vertex(new Vector3(projx2, projy2, 0));
-
-        GL.Vertex(new Vector3(x1, y1, 0));
-        GL.Vertex(new Vector3(projx2, projy1, 0));
-        GL.Vertex(new Vector3(projx2, projy2, 0));
+        GL.Vertex3(x1, y1, 0);
+        GL.Vertex3(x2, y2, 0);
+        
+        GL.Vertex3(projx2, projy2, 0);
+        GL.Vertex3(projx1, projy1, 0);
 
         GL.End();
     }
