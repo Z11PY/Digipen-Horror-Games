@@ -10,6 +10,7 @@ TagManager:
   - Monster
   - Vision
   - box
+  - Zapper
   layers:
   - Default
   - TransparentFX
