@@ -19,6 +19,7 @@ public class TowelControl : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        //FindObjectOfType<TowelControl>().IncreaseTowelCount();
+        Destroy(gameObject);
     }
 }

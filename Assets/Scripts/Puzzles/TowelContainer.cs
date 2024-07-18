@@ -12,8 +12,7 @@ public class TowelContainer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void IncreaseTowelCount()
     {
         towels++;
     }
