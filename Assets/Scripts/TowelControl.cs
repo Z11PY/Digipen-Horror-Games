@@ -7,19 +7,15 @@ using TMPro;
 
 public class TowelControl : MonoBehaviour
 {
-    
-    void OnMouseDown()
+    Vector2 difference = Vector2.zero;
+
+    private void OnMouseDown()
     {
-        //if (Event.isMouse == EventType.MouseDrag)
-        {
-            Debug.Log("Mouse Dragged");
-            return;
-        }
-       
+        difference = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - (Vector2)transform.position;
     }
 
-    void Update()
+    private void OnMouseDrag()
     {
-        
+        transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - difference;
     }
 }
