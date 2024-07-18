@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEngine.SceneManagement;
 using UnityEngine;
-using TMPro;
 
 public class TowelControl : MonoBehaviour
 {
@@ -17,5 +15,10 @@ public class TowelControl : MonoBehaviour
     private void OnMouseDrag()
     {
         transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - difference;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
