@@ -11,6 +11,7 @@ TagManager:
   - Vision
   - box
   - Zapper
+  - Stair
   layers:
   - Default
   - TransparentFX
