@@ -15,5 +15,6 @@ public class TowelContainer : MonoBehaviour
     public void IncreaseTowelCount()
     {
         towels++;
+        Destroy(gameObject);
     }
 }
