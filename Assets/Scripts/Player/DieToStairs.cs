@@ -33,6 +33,7 @@ public class DieToStairs : MonoBehaviour
        
         // Wait for the specified delay
         yield return new WaitForSeconds(delay);
+
         //Load the "Basement" scene
         SceneManager.LoadScene("Basement");
         
