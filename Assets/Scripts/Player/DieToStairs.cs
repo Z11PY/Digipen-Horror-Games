@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DieToStairs : MonoBehaviour
 {
     public bool hasFlashLight = false;
-    float delay = 3f;
+    public float delay = 3f;
     // add this to the stairs for it to kill player
     void start()
     {
