@@ -5,18 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class DieToStairs : MonoBehaviour
 {
+    public bool hasFlashLight = false;
     // add this to the stairs for it to kill player
     void start()
     {
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
+       
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("End Game");
             Destroy(collision.gameObject);
 
+        }else if (hasFlashLight == true)
+        {
+            SceneManager.LoadScene("");
         }
 
     }
