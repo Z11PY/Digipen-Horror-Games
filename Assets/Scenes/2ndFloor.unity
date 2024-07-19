@@ -7121,7 +7121,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2142632037641498496, guid: c19b7ecb8df0caf4b91c89266f32a580, type: 3}
       propertyPath: m_Radius
-      value: 1.6821848
+      value: 1.8651032
       objectReference: {fileID: 0}
     - target: {fileID: 2142632037641498496, guid: c19b7ecb8df0caf4b91c89266f32a580, type: 3}
       propertyPath: m_Offset.x
@@ -7129,7 +7129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2142632037641498496, guid: c19b7ecb8df0caf4b91c89266f32a580, type: 3}
       propertyPath: m_Offset.y
-      value: -0.94781995
+      value: -0.69294876
       objectReference: {fileID: 0}
     - target: {fileID: 2205145870339575546, guid: c19b7ecb8df0caf4b91c89266f32a580, type: 3}
       propertyPath: m_SortingOrder
@@ -7187,7 +7187,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8723265812782928238, guid: c19b7ecb8df0caf4b91c89266f32a580, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
