@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class DieToStairs : MonoBehaviour
 {
-    public float delay = 3f;
 
     void Start()
     {
-        
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -21,22 +20,10 @@ public class DieToStairs : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("PlayerF"))
         {
-            
-            StartCoroutine(DelayToSwitchScene(delay));
+
+            // Load the "Jump Scare" scene
+            SceneManager.LoadScene("Jump Scare");
         }
     }
-
-    private IEnumerator DelayToSwitchScene(float delay)
-    {
-        // Load the "Jump Scare" scene
-        SceneManager.LoadScene("Jump Scare");
-       
-        // Wait for the specified delay
-        yield return new WaitForSeconds(delay);
-
-        //Load the "Basement" scene
-        SceneManager.LoadScene("Basement");
-        
-
-    }
 }
+ 
