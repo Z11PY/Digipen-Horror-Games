@@ -5,32 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class DieToStairs : MonoBehaviour
 {
-    public bool hasFlashLight = false;
     public float delay = 3f;
-    // add this to the stairs for it to kill player
-    void start()
-    {
 
+    void Start()
+    {
+        
     }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene("End Game");
             Destroy(collision.gameObject);
-
         }
         else if (collision.gameObject.CompareTag("PlayerF"))
         {
-            SceneManager.LoadScene("Jump Scare");
+            
             StartCoroutine(DelayToSwitchScene(delay));
         }
-
     }
+
     private IEnumerator DelayToSwitchScene(float delay)
     {
+        // Load the "Jump Scare" scene
+        SceneManager.LoadScene("Jump Scare");
+       
+        // Wait for the specified delay
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("");
+        //Load the "Basement" scene
+        SceneManager.LoadScene("Basement");
+        
+
     }
 }

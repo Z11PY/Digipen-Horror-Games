@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jump Scare.unity
     guid: 1eca4835da5e7114fa8520fd044e358f
+  - enabled: 1
+    path: Assets/Scenes/Basement.unity
+    guid: 638f18bcb19b5ad40a59f0d0c2194bbe
   m_configObjects: {}
