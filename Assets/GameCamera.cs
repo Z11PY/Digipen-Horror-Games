@@ -14,7 +14,7 @@ public class GameCamera : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         cam = Camera.main;
         cam.aspect = 4f / 3f;
-        camHeight = 2 * cam.orthographicSize;
+        camHeight = 2.0f * cam.orthographicSize;
         camWidth = camHeight * cam.aspect;
     }
 
@@ -28,8 +28,8 @@ public class GameCamera : MonoBehaviour
 
     private void OnPostRender()
     {
-        float cameraLeft = transform.position.x - camWidth / 2;
-        float cameraBottom = transform.position.y - camHeight / 2;
+        float cameraLeft = transform.position.x - (camWidth / 2.0f);
+        float cameraBottom = transform.position.y - (camHeight / 2.0f);
 
         GL.PushMatrix();
         GLDraw.SetPass(0);
@@ -69,11 +69,11 @@ public class GameCamera : MonoBehaviour
         GL.Begin(GL.QUADS);
         GL.Color(Color.black);
 
-        GL.Vertex3(x1, y1, 0);
-        GL.Vertex3(x2, y2, 0);
+        GL.Vertex3(x1, y2, 0);
+        GL.Vertex3(x2, y1, 0);
         
-        GL.Vertex3(projx2, projy2, 0);
         GL.Vertex3(projx1, projy1, 0);
+        GL.Vertex3(projx2, projy2, 0);
 
         GL.End();
     }

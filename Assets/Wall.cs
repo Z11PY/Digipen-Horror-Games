@@ -10,11 +10,11 @@ public class Wall : MonoBehaviour
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-        centerX = transform.position.x + boxCollider.bounds.extents.x;
-        centerY = transform.position.y - boxCollider.bounds.extents.y;
-        left = transform.position.x;
-        top = transform.position.y;
-        right = transform.position.x + boxCollider.bounds.size.x;
-        bottom = transform.position.y - boxCollider.bounds.size.y;
+        centerX = transform.position.x;
+        centerY = transform.position.y;
+        left = transform.position.x - (boxCollider.bounds.size.x / 2.0f);
+        top = transform.position.y + (boxCollider.bounds.size.y / 2.0f);
+        right = transform.position.x + (boxCollider.bounds.size.x / 2.0f);
+        bottom = transform.position.y - (boxCollider.bounds.size.y / 2.0f);
     }
 }
