@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class TowelControl : MonoBehaviour
 {
+    int towels = 0;
+
     Vector2 difference = Vector2.zero;
 
     private void OnMouseDown()
@@ -17,9 +20,12 @@ public class TowelControl : MonoBehaviour
         transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - difference;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collision2D collision)
     {
-        //FindObjectOfType<TowelControl>().IncreaseTowelCount();
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Folded"))
+        {
+            towels++;
+            Destroy(gameObject);
+        }
     }
 }
