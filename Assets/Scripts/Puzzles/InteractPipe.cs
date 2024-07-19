@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Interact : MonoBehaviour
+public class InteractPipe : MonoBehaviour
 {
     public TextMeshProUGUI interactPrompt;
     public bool isTouching;
