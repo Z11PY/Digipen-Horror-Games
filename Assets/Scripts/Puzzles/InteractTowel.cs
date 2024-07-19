@@ -4,22 +4,22 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class InteractPipe : MonoBehaviour
+public class InteractTowel : MonoBehaviour
 {
     public TextMeshProUGUI interactPrompt;
     public bool isTouching;
     public GameObject pipePuzzle;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isTouching == true && Input.GetKeyDown(KeyCode.E))
+        if (isTouching == true && Input.GetKeyDown(KeyCode.E))
         {
             pipePuzzle.SetActive(true);
         }
