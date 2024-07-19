@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MonsterKillOnCollision : MonoBehaviour
 {
+    public AudioSource monsterKill;
     void start()
     {
        
@@ -13,10 +14,10 @@ public class MonsterKillOnCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            monsterKill.Play();
             SceneManager.LoadScene("End Game");
             // Destroy the player GameObject
             Destroy(collision.gameObject);
-            
         }
 
     }

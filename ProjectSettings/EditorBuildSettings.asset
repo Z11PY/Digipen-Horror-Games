@@ -10,11 +10,11 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/2ndFloor.unity
-    guid: 6950dd067f4f5d946ae13ca758b98b04
+    guid: 023fe1b797420484a98c7f9c187e1be4
   - enabled: 1
     path: Assets/Scenes/Tips.unity
     guid: bc3d8b9cf3991834ca5470905c1295cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pipe puzzle.unity
     guid: ebf7adfb4889ace4d870374de61cebbc
   - enabled: 1
@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 35268be61ea3786469517c3030e8e966
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Towel puzzle.unity
     guid: b78ac708145fe524a8e18098f5466096
   - enabled: 0
