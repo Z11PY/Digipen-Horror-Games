@@ -14,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
     private float forwardInput;
     [SerializeField] private Rigidbody2D playerRb;
 
+    //if script is broken delete lines 18 and 19 >Rasa
+    private Animation anim;
+    public bool isWalking;
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +55,8 @@ public class PlayerMovement : MonoBehaviour
         {
             stamina += 10;
         }
+
+       
     }
     
 }
