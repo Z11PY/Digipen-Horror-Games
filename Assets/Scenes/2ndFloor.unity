@@ -1731,8 +1731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5084cc56b8d13a54183a2965e34b2cb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasFlashLight: 0
-  delay: 2
 --- !u!1 &688162196
 GameObject:
   m_ObjectHideFlags: 0
@@ -7260,7 +7258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6877377102943263873, guid: 411807956d43bff48b9548d02b45c696, type: 3}
       propertyPath: m_TagString
-      value: PlayerF
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
