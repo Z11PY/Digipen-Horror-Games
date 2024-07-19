@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private const int V = 1;
     public float speed = 3;
     public float rotationSpeed;
     public float sprintSpeed = 5;
@@ -17,13 +18,15 @@ public class PlayerMovement : MonoBehaviour
     //if script is broken delete lines 18 and 19 >Rasa
     private Animation anim;
     public bool isWalking;
-
-
+    
     // Start is called before the first frame update
     void Start()
     {
         speed = 3;
         sprintSpeed = 5;
+        //
+        anim = gameObject.GetComponent<Animation>();
+        
     }
 
     // Update is called once per frame
@@ -46,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
             isSprinting = false;
         }
 
-        if(isSprinting == true)
+        if (isSprinting == true)
         {
             stamina -= staminaDrain;
         }
@@ -55,8 +58,8 @@ public class PlayerMovement : MonoBehaviour
         {
             stamina += 10;
         }
+        
 
-       
     }
-    
+
 }
