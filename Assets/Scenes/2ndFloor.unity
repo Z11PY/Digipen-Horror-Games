@@ -691,7 +691,8 @@ GameObject:
   - component: {fileID: 367809190}
   - component: {fileID: 367809191}
   - component: {fileID: 367809192}
-  m_Layer: 0
+  - component: {fileID: 367809193}
+  m_Layer: 6
   m_Name: Square (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -837,6 +838,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &367809193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367809188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!4 &480875007 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7184692959853927663, guid: c19b7ecb8df0caf4b91c89266f32a580, type: 3}
@@ -997,7 +1016,8 @@ GameObject:
   - component: {fileID: 489914093}
   - component: {fileID: 489914094}
   - component: {fileID: 489914095}
-  m_Layer: 0
+  - component: {fileID: 489914096}
+  m_Layer: 6
   m_Name: Square (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1143,6 +1163,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &489914096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489914091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &532395498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1193,7 @@ GameObject:
   - component: {fileID: 532395500}
   - component: {fileID: 532395499}
   - component: {fileID: 532395502}
+  - component: {fileID: 532395503}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1270,6 +1309,19 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &532395503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532395498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc93532682ec6e74bb37fb452681c433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GLDraw: {fileID: 2100000, guid: 1f1ad74f2adc1f440937059a04cb7bd4, type: 2}
 --- !u!1 &566647436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,7 +1613,8 @@ GameObject:
   - component: {fileID: 688162198}
   - component: {fileID: 688162199}
   - component: {fileID: 688162200}
-  m_Layer: 0
+  - component: {fileID: 688162201}
+  m_Layer: 6
   m_Name: Square (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -1707,6 +1760,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &688162201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688162196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &756942356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,7 +2097,8 @@ GameObject:
   - component: {fileID: 809224074}
   - component: {fileID: 809224075}
   - component: {fileID: 809224076}
-  m_Layer: 0
+  - component: {fileID: 809224077}
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2172,6 +2244,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &809224077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809224072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &834929267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2184,7 +2274,8 @@ GameObject:
   - component: {fileID: 834929269}
   - component: {fileID: 834929270}
   - component: {fileID: 834929271}
-  m_Layer: 0
+  - component: {fileID: 834929272}
+  m_Layer: 6
   m_Name: Square (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2330,6 +2421,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &834929272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834929267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &884007572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,6 +2541,7 @@ GameObject:
   - component: {fileID: 936894467}
   - component: {fileID: 936894468}
   - component: {fileID: 936894469}
+  - component: {fileID: 936894470}
   m_Layer: 0
   m_Name: Square (7)
   m_TagString: Wall
@@ -2578,6 +2688,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &936894470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936894465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &945216810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,6 +2718,7 @@ GameObject:
   - component: {fileID: 945216812}
   - component: {fileID: 945216813}
   - component: {fileID: 945216814}
+  - component: {fileID: 945216815}
   m_Layer: 0
   m_Name: Square (5)
   m_TagString: Wall
@@ -2736,6 +2865,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &945216815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945216810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &989002478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2895,8 @@ GameObject:
   - component: {fileID: 989002480}
   - component: {fileID: 989002481}
   - component: {fileID: 989002482}
-  m_Layer: 0
+  - component: {fileID: 989002483}
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2894,6 +3042,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &989002483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989002478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1035584724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,7 +3303,8 @@ GameObject:
   - component: {fileID: 1106762188}
   - component: {fileID: 1106762189}
   - component: {fileID: 1106762190}
-  m_Layer: 0
+  - component: {fileID: 1106762191}
+  m_Layer: 6
   m_Name: Square (11)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3283,6 +3450,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1106762191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106762186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1136994464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,7 +3810,8 @@ GameObject:
   - component: {fileID: 1333620262}
   - component: {fileID: 1333620263}
   - component: {fileID: 1333620264}
-  m_Layer: 0
+  - component: {fileID: 1333620265}
+  m_Layer: 6
   m_Name: Square (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3771,6 +3957,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1333620265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333620260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1338434197
 GameObject:
   m_ObjectHideFlags: 0
@@ -3783,7 +3987,8 @@ GameObject:
   - component: {fileID: 1338434199}
   - component: {fileID: 1338434200}
   - component: {fileID: 1338434201}
-  m_Layer: 0
+  - component: {fileID: 1338434202}
+  m_Layer: 6
   m_Name: Square (14)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -3929,6 +4134,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1338434202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338434197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1384338276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4369,6 +4592,7 @@ GameObject:
   - component: {fileID: 1500474750}
   - component: {fileID: 1500474751}
   - component: {fileID: 1500474752}
+  - component: {fileID: 1500474753}
   m_Layer: 0
   m_Name: Square
   m_TagString: Wall
@@ -4515,6 +4739,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1500474753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500474748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1510321245
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,7 +4967,8 @@ GameObject:
   - component: {fileID: 1586806113}
   - component: {fileID: 1586806114}
   - component: {fileID: 1586806115}
-  m_Layer: 0
+  - component: {fileID: 1586806116}
+  m_Layer: 6
   m_Name: Square (10)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4871,6 +5114,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1586806116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586806111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1605211204
 GameObject:
   m_ObjectHideFlags: 0
@@ -4883,7 +5144,8 @@ GameObject:
   - component: {fileID: 1605211206}
   - component: {fileID: 1605211207}
   - component: {fileID: 1605211208}
-  m_Layer: 0
+  - component: {fileID: 1605211209}
+  m_Layer: 6
   m_Name: Square (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5029,6 +5291,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1605211209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605211204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &1655357622
 GameObject:
   m_ObjectHideFlags: 0
@@ -5725,6 +6005,7 @@ GameObject:
   - component: {fileID: 2035547881}
   - component: {fileID: 2035547882}
   - component: {fileID: 2035547883}
+  - component: {fileID: 2035547884}
   m_Layer: 0
   m_Name: Square (2)
   m_TagString: Wall
@@ -5871,6 +6152,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &2035547884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035547879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f965b2b1d0108e418da4f3899394111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 0
+  centerY: 0
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
 --- !u!1 &2047481918
 GameObject:
   m_ObjectHideFlags: 0
