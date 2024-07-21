@@ -19,6 +19,9 @@ public class Win : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene("Win");
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
 }
